@@ -13,7 +13,13 @@ func main() {
 	fmt.Println()
 	// for dengan statement
 	for i := 1; i <= 10; i++ {
-		fmt.Println("Perulangan ke", i)
+		if i == 3 {
+			continue
+		} else if i == 9 {
+			break
+		} else {
+			fmt.Println("Perulangan ke", i)
+		}
 	}
 
 	fmt.Println()
