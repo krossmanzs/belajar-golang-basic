@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+// empty interface seperti layaknya generic pada java
+
 func Ups(pilihan int) interface{} {
 	switch pilihan {
 	case 1:
