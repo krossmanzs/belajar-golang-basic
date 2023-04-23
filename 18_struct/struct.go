@@ -7,10 +7,16 @@ type Mahasiswa struct {
 	Umur      int
 }
 
+func (mahasiswa Mahasiswa) sayHello() {
+	fmt.Println("Halo", mahasiswa.Nama)
+}
+
 func printMahasiswa(data Mahasiswa) {
 	fmt.Println("Nama:", data.Nama)
 	fmt.Println("NIM:", data.Nim)
-	fmt.Println("Umur:", data.Umur, "\n")
+	fmt.Println("Umur:", data.Umur)
+	data.sayHello()
+	fmt.Println()
 }
 
 func main() {
